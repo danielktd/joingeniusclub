@@ -149,3 +149,23 @@
 .paragraph{
  text-align: center;
 }
+/* Style the select element */
+select#country {
+    width: 200px; /* Set the width of the select element */
+    padding: 10px; /* Add padding to make it more visually appealing */
+    background-color: #f2f2f2; /* Set the background color of the select element */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    appearance: none; /* Remove default dropdown arrow */
+  }
+  
+  /* Style the options within the select dropdown */
+  select#country option {
+    padding: 10px; /* Add padding to each option */
+  }
+  
+  /* Style the select dropdown when it's clicked or focused */
+  select#country:focus {
+    outline: none; /* Remove default focus outline */
+    background-color: #e0e0e0; /* Change background color when focused */
+  }
