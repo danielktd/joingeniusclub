@@ -14971,7 +14971,7 @@ software_web
     border-style: solid; /* Set border style */
     border-radius: 12px;
     border-color: #E1A13F;
-
+    box-shadow: 0 0 30px -3px #E1A13F;
  
 }
 
