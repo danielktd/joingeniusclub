@@ -1,0 +1,151 @@
+.logo-edit{
+    height: 50px;
+    width: 100px;
+}
+.center-content {
+    text-align: center; /* Aligns content horizontally */
+  }
+  
+  .center-content img {
+    display: inline-block; /* Ensures image behaves as an inline-block element */
+  }
+  .animated-button1 {
+    position: relative;
+    background: linear-gradient(-30deg, rgb(38, 32, 3) 50%, #985e08 50%);
+    padding: 10px 120px;
+    margin: 10px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap; /* Prevent text from wrapping */
+    max-width: 150px; /* Set maximum width as needed */
+    width: 100%; /* Set width to 100% */
+}
+
+
+.animated-button1::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+    -webkit-transition: .2s opacity ease-in-out;
+    transition: .2s opacity ease-in-out;
+}
+
+.animated-button1:hover::before {
+    opacity: 0.1;
+}
+
+.animated-button1 span {
+    position: absolute;
+}
+
+.animated-button1 span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(43, 8, 8, 0)), to(#E1A13F));
+    background: linear-gradient(to left, rgba(43, 8, 8, 0), #E1A13F);
+    -webkit-animation: 2s animateTop linear infinite;
+    animation: 2s animateTop linear infinite;
+}
+
+@keyframes animateTop {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+.animated-button1 span:nth-child(2) {
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 2px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 8, 8, 0)), to(#E1A13F));
+    background: linear-gradient(to top, rgba(43, 8, 8, 0), #E1A13F);
+    -webkit-animation: 2s animateRight linear -1s infinite;
+    animation: 2s animateRight linear -1s infinite;
+}
+
+@keyframes animateRight {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+}
+
+.animated-button1 span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(43, 8, 8, 0)), to(#E1A13F));
+    background: linear-gradient(to right, rgba(43, 8, 8, 0), #E1A13F);
+    -webkit-animation: 2s animateBottom linear infinite;
+    animation: 2s animateBottom linear infinite;
+}
+
+@keyframes animateBottom {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+.animated-button1 span:nth-child(4) {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 2px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 8, 8, 0)), to(#E1A13F));
+    background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #E1A13F);
+    -webkit-animation: 2s animateLeft linear -1s infinite;
+    animation: 2s animateLeft linear -1s infinite;
+}
+
+@keyframes animateLeft {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+}
+.underlined {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(225, 161, 63, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  /* Set the text color to white or a contrasting color */
+}
+.paragraph{
+ text-align: center;
+}
