@@ -144,6 +144,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #fff;
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  margin-top: 0px;
   /* Set the text color to white or a contrasting color */
 }
 .paragraph{
