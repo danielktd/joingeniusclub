@@ -169,3 +169,25 @@ select#country {
     outline: none; /* Remove default focus outline */
     background-color: #e0e0e0; /* Change background color when focused */
   }
+
+  .custom-alert {
+    background-color: #E1A13F; /* Red background color */
+    color: white; /* White text color */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    position: fixed; /* Position the alert at fixed location */
+    top: 20px; /* Distance from top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1000; /* Ensure the alert appears above other content */
+    width: 90%; /* Adjust the width to fit smaller screens */
+    max-width: 300px; /* Set a maximum width for larger screens */
+  }
+  
+  /* Media query for smaller screens (mobile devices) */
+  @media screen and (max-width: 768px) {
+    .custom-alert {
+      top: 50%; /* Center vertically on mobile devices */
+      transform: translate(-50%, -50%); /* Center vertically and horizontally */
+    }
+  }
